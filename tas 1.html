@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a function that takes in an array of numbers and returns the sum 
+        of all even numbers in the array</title>
+</head>
+<body>
+    <script>
+
+     var number = [1,2,3,4,7,8,9,10,40]
+      function evennumber(number){
+        let sum=0;
+        for(let i= 0; i< number.length; i++){
+            if(number[i] % 2 ==0){
+                sum = sum +number[i];
+                console.log(sum);
+            }
+        }
+      }
+     evennumber(number)
+
+
+     
+
+    </script>
+</body>
+</html>

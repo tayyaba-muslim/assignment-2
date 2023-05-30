@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an object representing a car with properties like make, model, and year.
+      Write a function that takes in the car object and displays the car's information.
+   by using loop within the function.</title>
+</head>
+<body>
+    <script>
+   function carsdata(name,color,year,make){
+    this.Name = name;
+    this.Color = color,
+    this.Year = year,
+    this.Make = make
+   }
+  let details = new carsdata('corolla','black','2017','toyoto');
+  for(var i in details){
+    document.write(i + " "+":" +" " + details[i]+'<br>')
+  }
+
+    </script>
+</body>
+</html>

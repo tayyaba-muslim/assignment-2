@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write the program to describe the inheritance concept in javascript.</title>
+</head>
+<body>
+    <script>
+   class Icecream{
+    constructor(flavour, scoops , price){
+        this.Flavour = flavour,
+        this.Scoops = scoops,
+        this.Price = price
+        this.Date = [];
+    }
+   date() {
+    this.Date.push(new Date());
+   }
+
+    message() {
+        console.log("INHERITANCE CONCEPT");
+    }
+}
+    class Child extends Icecream{
+    constructor(flavour, scoops , price){
+        super(flavour, scoops , price);
+    }
+
+    }
+   let data = new Icecream("Mango", 2 , 200);
+   let child = new Child("Blueberry", 3, 400);
+   data.date();
+   child.date();
+   child.message();
+   console.log(data);
+   console.log(child);
+
+    </script>
+</body>
+</html>
